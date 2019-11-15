@@ -1,0 +1,87 @@
+body{
+    position: relative;
+}
+
+.web{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.black{
+    background: url("./back.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+.black::after{
+    background: rgba(0,0,0,.6);
+    content: " ";
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.white{
+    padding: 5em 3em 1em 3em;
+    /* background: url("./sprint.jpg") repeat-x center center fixed; */
+    background: #ebe1cb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+.djIcon{
+    font-size: 19px;
+    position: absolute;
+    top: 1em;
+    left: 3em;
+    transform: rotate(-90deg);
+
+}
+.djName{
+    font-size: 4em;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.djName div{
+    background: rgba(59,59,59,1);
+    color: #ebe1cb;
+    padding: 0px 35px;
+    display: inline-block;
+    font-weight: 800;
+}
+.white .upcoming{
+    margin-top: 4em;
+}
+.upcoming h2{
+    color: rgba(0,0,0,.6);
+    font-weight: 500;
+}
+
+
+.song{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #333;
+    padding: 1em;
+}
+
+.songOut{
+    position: relative;
+}
+.songIn{
+    background: rgba(255,255,255,.3);
+    padding: 1em;
+}
